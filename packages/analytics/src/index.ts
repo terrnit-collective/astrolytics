@@ -8,3 +8,4 @@ export {default as Plausible} from "../src/plausible/Plausible.astro";
 export {default as SimpleAnalytics} from "../src/simple-analytics/SimpleAnalytics.astro";
 export {default as Umami} from "../src/umami/Umami.astro";
 export {default as YandexMetrika} from "../src/yandex-metrika/YandexMetrika.astro";
+export {default as Hotjar} from "../src/hotjar/Hotjar.astro";
