@@ -4,19 +4,12 @@
 	"homepage": "https://github.com/terrnit-collective/astrolytics",
 	"version": "1.0.0",
 	"type": "module",
-	"license": "MIT",
 	"exports": {
-		"./amplitude": "./src/amplitude/index.ts",
-		"./fantom": "./src/fantom/index.ts",
-		"./google-analytics": "./src/google-analytics/index.ts",
-		"./matomo": "./src/matomo/index.ts",
-		"./metrical": "./src/metrical/index.ts",
-		"./minimal-analytics": "./src/minimal-analytics/index.ts",
-		"./plausible": "./src/plausible/index.ts",
-		"./simple-analytics": "./src/simple-analytics/index.ts",
-		"./umami": "./src/umami/index.ts",
-		"./yandex-metrika": "./src/yandex-metrika/index.ts"
+		".": "./src/index.ts"
 	},
+	"files": [
+    	"src"
+  	],
 	"publishConfig": {
 		"access": "public"
 	},

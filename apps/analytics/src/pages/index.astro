@@ -1,5 +1,5 @@
 ---
-import Umami from "../components/Umami.astro";
+import { Umami } from "@astrolytics/analytics";
 ---
 
 <html lang="en">
@@ -8,11 +8,10 @@ import Umami from "../components/Umami.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Astro Playground</title>
 		<Umami />
 	</head>
 	<body>
-		<h1>Astro</h1>
-		<a href="/pagetwo">page two</a>
+		<h1>Astro Playground</h1>
 	</body>
 </html>
