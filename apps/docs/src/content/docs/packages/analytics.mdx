@@ -1,0 +1,56 @@
+---
+title: "@astrolytics/analytics"
+description: "how to use the analytics package"
+---
+
+import { Tabs, TabItem, Steps } from "@astrojs/starlight/components";
+
+which analytics provider are you using?
+
+<Tabs>
+  <TabItem label="umami">
+    <Steps>
+    1. Install the package:
+        <Tabs>
+            <TabItem label="pnpm">
+                ```bash
+                pnpm add @astrolytics/analytics
+                ```
+            </TabItem>
+            <TabItem label="yarn">
+                ```bash
+                yarn add @astrolytics/analytics
+                ```
+            </TabItem>
+            <TabItem label="npm">
+                ```bash
+                npm install @astrolytics/analytics
+                ```
+            </TabItem>
+            <TabItem label="bun">
+                ```bash
+                bun add @astrolytics/analytics
+                ```
+            </TabItem>
+        </Tabs>
+
+    2. Add the `<Analytics />` component to your layout file:
+        ```astro
+        ---
+        // File name: src/layouts/Layout.astro
+        import { Analytics } from "@astrolytics/analytics/umami";
+        ---
+
+        ...
+        <Analytics
+            host="the url to the tracker script"
+            websiteId="the website id from umami"
+        /> {/* add this before the end of your <head> tag */}
+        ```
+
+    </Steps>
+
+  </TabItem>
+</Tabs>
+
+don't see your analytics provider? [submit a new one!](https://github.com/gurkz-oss/astroutils/issues/new)

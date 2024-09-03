@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "astrolytics-mono",
+  "version": "0.0.0",
+  "description": "Astrolytics monorepo",
+  "type": "module",
+  "engines": {
+    "pnpm": ">=8",
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@astrolytics/eslint-config": "workspace:*",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "turbo": "^1.12.4",
+    "@changesets/cli": "^2.27.1"
+  },
+  "peerDependencies": {
+    "astro": "^4.4.11"
+  },
+  "scripts": {
+    "changeset": "changeset",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,astro}\"",
+    "version-packages": "changeset version",
+    "release": "turbo run lint && changeset publish",
+    "dev": "turbo dev",
+    "build": "turbo run build --cache-dir=.turbo"
+  }
+}
