@@ -5,11 +5,15 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Astrolytics',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/terrnit-collective/astrolytics',
 			},
 			sidebar: [
+				{
+					label: "Introduction",
+					slug: "introduction",
+				},
 				{
 					label: 'Guides',
 					items: [
